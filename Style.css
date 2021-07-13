@@ -1,0 +1,193 @@
+body {
+    background: black !important;
+    font-size: 14px;
+    color: white;
+    font-family: 'Spectral', serif; 
+} 
+
+.nav {
+  position: absolute;
+  float: left;
+  left: 3.5rem;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+.nav li {
+    float: left;
+}
+
+.navbar-brand{
+    margin-left: 15px;
+}
+
+.nav a{
+  text-align: center;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 4.7rem;
+}
+
+.nav a:hover{
+
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.nav a.active{
+    color: #ffffff;
+}
+   
+
+#intro {
+    position: relative;
+    top: 45px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 100%;
+    font-style: oblique;
+}
+
+#intro em{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.line {
+    position: relative;
+    top: 50px;
+    height: 2px;
+    border-radius: 1px;
+    width: 100%;
+    margin: 0 1rem 1rem 1rem;
+}
+
+#proj {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.main #proj{
+    text-align: left;
+    margin-left: 5rem;
+}
+
+#proj h2{
+    font-family: 'Permanent Marker', cursive;
+}
+
+#proj img{
+    margin-left: 3rem;
+}
+
+#proj p{
+    position: inherit;
+    top: 15px;
+}
+
+#proj .row {
+    padding-top: 2rem;
+}
+
+#bio {
+    position: relative;
+    top: 70px;
+}
+
+#bio h2{
+    font-family: 'Rock Salt', cursive;
+    margin-left: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+#bio span{
+    margin-left: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+}
+
+#bio .container {
+    padding-top: 1rem;
+}
+
+form {
+    position: relative; 
+    margin: 0 auto;
+    width: 400px;
+    top: 50px;
+    left: 60px;
+}
+  
+label {
+    width:100%;
+}
+  
+input, textarea {
+    width: 300px;
+    margin: 3px;
+}
+  
+input:focus, textarea:focus {
+    border-color: rgb(39, 2, 247);
+}
+
+::placeholder{
+    opacity: 0;
+}
+  
+textarea {
+    height: 5rem;
+    resize: vertical;
+}
+
+form .button {
+    margin-left: 1rem;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    float: left;
+    padding-top: 10rem;
+}
+
+#f_right {
+    float: right;
+    margin-right: 1rem;
+}
+
+footer li{
+    display: inline-block;
+}
+
+@media screen and (max-width: 575px) {
+    #intro, #line1{
+        visibility: hidden;
+    }
+
+    .main #proj {
+        top: 45px;
+    }
+
+    .other1 .line, #proj{
+        top: 220px;
+    }
+
+    .other2 .line, #bio{
+        top: 220px;
+    }
+
+    .other3 .line, form{
+        top: 220px; 
+    }
+
+    .other3 footer{
+        padding-top: 17rem;
+    }
+}
+
+

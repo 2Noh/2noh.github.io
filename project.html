@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Nahom Ayalew
+EMAIL: nayalew@uci.edu
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Nahom Ayalew">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAV90lEQVR4Xu2dB6xVRRPH54kNFCtir6gYBbsGNTZQFAuWqNgL9t4rdsWuiYodK3YTC2r8LGBFjcSKvStWsCAWBMv78ls9L3v3zZ6zp9z7zpWzCfk+3z1nd3Z2dnbmPzN7WiS59RCRFUVkJRHpIyJricgcya9VT3QAByaLyAsi8qKIvC4ib4jIR3F0tMT8yMIPFZFBHTCRasjiOHCXiAzxCYJPAHjhVBGZuTg6qp46kAPTROTMfzd0DRmaAIwTkV4dSGw1dP048KaI9La7dwVglIj0rd/4Vc8l4MBoEekX0WELwEAReaAEBFYk1J8DW4nISIaJBKC7iHwqIp3rP3Y1Qgk4MEVElhCRCZEAXCci+5SAsIqExnFguIjsiwAsKyLvNW7caqQScaAnArCTiNxeIqIqUhrHgZ0RgItE5OjGjVmNVCIOXIwAPCkiG5SIqIqUxnHgKQQA/Lhr48asRioRB35GAFpLRFBFSoM5UAlAgxletuEqASjbisTQ07VrV9l1111l6623luWXX17mmWce6dy5s7S0tMhff/0l3333nTz55JNy6aWXyosvEhFObpUAJPOow5/YYIMN5JBDDpGNNtpI5pxzzkR6fv/9d7n11lvlqKOOkp9//jn2+UoAEtmZ7wF26sCBA6Vfv36y1FJLSffu3c2u7dSpk/z5559y8803yz776CAsCz9kyBBZb731ZOaZ00XmW1tb5fHHH5ftttsuVggqAci3vurbiyyyiBx22GGy1VZbSY8ePcxi+9rbb78tK6ywQs3Pffr0kbPOOivTwtsdcSzcdtttsscee3jHrwSgQAFg4Y499ljZdNNNpUuXLok9owFYoD333NM8i+BceOGF5oyfddZZ273Prp44caI535966il57rnnZOzYsea9bbbZxmiS3r17G5sgar/++qucdNJJctlll6n0VAKQuEzJD6DmTz31VLPjtYWjBxaPxfjiiy/kzTfflGeeeUbuu+8+89+0448/3pzZHBFu++mnn+Tpp5+Wm266ybzjaxiJN954oxEgW+uMGzfOHAXvv/9+u1crAUhe39gnWLhjjjlGunXr1u45VPBHH30ko0ePlhtuuMHsVrchNOz6pZdeumbnIjAIx5133ml2byQoSeQiBI888oiss846bY9i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">
+</head>
+
+<body class="other1">
+    <nav class="nav navbar-expand-sm justify-content-center container-fluid">
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="active nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html" target="_self"> 
+                        <img src="logo.png"  alt="logo">  
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="NahomResume19.pdf" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="line bg-dark"> </div>
+
+    <div id="proj">
+        <h2>
+            Project: tempor incididunt
+        </h2>
+        <img src="https://picsum.photos/id/1082/500/400" alt="Placeholder Image of hands playing a piano"> 
+        <p>
+           More info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus orci ac auctor augue. Ullamcorper eget nulla facilisi etiam. Quis vel eros donec ac odio tempor orci dapibus. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis.
+        </p>
+        <p>
+            Even More info: De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro.    
+        </p>
+        <p>
+            Too much Info: Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! 
+        </p>
+    </div>
+
+    <footer>
+        <ul>
+            <li class="text-white">© Nahom Ayalew 2019</li>
+            <li id="f_right">
+                <a href="https://uci.joinhandshake.com/users/13604895" target="_blank"> 
+                    <img src="handshake.png"  alt="Handshake Icon">  
+                </a>
+                <a href="https://www.linkedin.com/in/nahom-ayalew-670b6491/" target="_blank"> 
+                    <img src="linkedin.png"  alt="LinkedIn Icon">  
+                </a>
+                <a href="https://github.com/2Noh" target="_blank"> 
+                    <img src="github.png"  alt="github Icon">  
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
