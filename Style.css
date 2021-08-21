@@ -619,6 +619,8 @@ body {
     bottom: 8px;
 
     margin-top: 2px;
+    width: auto;
+    max-width: 1484px;
 
     --min-fs-rem: .88 * 1rem;
     --max-fs-rem: 1.2 * 1rem;
@@ -702,7 +704,7 @@ section hr {
 
 .section_rs {
     position: relative;
-    top: 11vw;
+    top: 15.5rem;
 
     height: 68.75rem;
 }
@@ -710,18 +712,20 @@ section hr {
 .rs {
     position: relative;
 
-    margin: 10.625rem auto 0 6%;
+    margin: 0 auto 0 6%;
 }
 
 .subtitle {
-    max-width: 32rem;
+    margin: 0 1vw 0 6%;
+    width: auto;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2rem;
-    /* identical to box height, or 133% */
+    /* identical to box height, or 133% 
+    max-width: 32rem; */
     
     font-feature-settings: 'salt' on, 'liga' off;
     
@@ -730,13 +734,28 @@ section hr {
 
 .p1 {
     position: relative;
-    margin: 3.8125rem auto 7.5rem 6%;
+
+    width: 100vw;
+    /*margin: 3.8125rem 0 7.5rem 6%;
+    justify-content: center;
+    gap: 0 10px; */
+    
+    justify-content: flex-start;
+    gap: 0 10px;
 }
 
 .p2 {
     position: relative;
+    /* gap: 0 0;
+    margin: 0 auto; 
+    width: 63vw; 
+    justify-content: space-evenly;*/
 
-    margin: 1.375rem 1rem;
+    width: 47vw; 
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 60px 2vw;
 } 
 
 .subtitle p {
@@ -759,37 +778,50 @@ section hr {
 .persona {
     position: relative;
 
-    width: 32.4375rem;
-    height: 11.875rem;
-    min-width: 32.4375rem;
-    margin: 1.875rem 4.4375rem 1.875rem 0;
+    width: clamp(397px, 30vw, 495.6px);
+    margin: 1.875rem 0;
+    height: 189.12px;
 
     background: #FFFFFF;
     mix-blend-mode: normal;
-
     box-shadow: 0 .625rem 1.25rem rgba(41, 41, 42, 0.15);
     border-radius: .625rem;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .avatar {
     position: relative;
-    left: 39%;
-    top: -50%;
+    top: -21%;
 
-    width: 8.125rem;
-    height: 8.125rem;
+    /*width: 8.125rem;
+    height: 8.125rem; */
 }
 
+div.persona:nth-child(2) .avatar {
+    position: relative;
+    top: -28%;
+}
+
+div.persona:nth-child(1) .quote > div:nth-child(2) {
+    align-items: end;
+    top: 4%;
+}   
+
+div.persona:nth-child(2) .quote > div:nth-child(2) {
+    align-items: end;
+    top: 10%;
+}   
+
 quote {
+    min-width: 302.167px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
     /* or 162% */
 
     text-align: center;
@@ -800,26 +832,29 @@ quote {
 
 .quote {
     position: relative;
-    left: -42.82%;
-    top: 11.58%;
+    top: -17.42%;
 
-    white-space: pre;
-    text-align: center;
+    width: 94%;
+
+    /* align-items: end;
+    white-space: pre;*/
+}
+
+div.persona:nth-child(2) .quote {
+    top: -21.42%;
 }
 
 .quote span {
     position: relative;
-    left: 18.7%;
-
-    width: auto;
-    max-width:296px;
 
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: .94rem;
+    line-height: 1.75rem;
     /* identical to box height, or 156% */
+
+    margin-top: 1rem;
 
     white-space: nowrap;
     color: #000000;
@@ -828,8 +863,6 @@ quote {
 
 .quote p {
     position: relative;
-    left: 47%;
-    top: -8.89%;
 
     font-family: Roboto;
     font-style: normal;
@@ -838,20 +871,6 @@ quote {
     line-height: 24px;
     /* identical to box height, or 171% */
 
-    white-space: nowrap;
-    color: #000000;
-}
-
-#ps2 span{
-    position: relative;
-    left: 22%;
-    width: auto;
-    max-width: 296px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
     white-space: nowrap;
     color: #000000;
 }
@@ -1346,6 +1365,31 @@ footer img {
         width: 177% !important;
     }
 
+    .p1 {
+        width: 92vw;
+        justify-content: center;
+        gap: 60px 10px;
+        flex-wrap: wrap;
+        bottom: 1rem;
+    }
+
+    .p2 {
+        gap: 60px 2vw;
+        left: 13px;
+    }
+
+    .persona {
+        min-width: 313.45px;
+    }
+
+    .subtitle h5 {
+        text-align: center;
+    }
+
+    .subtitle p {
+        text-align: center;
+    }
+
  }
 
 
@@ -1464,9 +1508,10 @@ footer img {
 
 /* X-Large devices (desktops, 1200px and up) */
  @media (min-width: 1200px) { 
+    /*
     html {
         font-size: 17px;
-    }
+    } */
 
     .card-img{
         height: 269px !important;
@@ -1487,6 +1532,11 @@ footer img {
 
     .intro2 {
         /* max-width: 49.5rem; */
+    }
+
+    .p2 {
+        width: auto;
+        justify-content: space-around;
     }
 
 /*
