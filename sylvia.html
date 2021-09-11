@@ -12,6 +12,7 @@ EMAIL: nayalew@uci.edu
     <meta name="author" content="Nahom Ayalew">
     <title>Nahom Ayalew | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="normalize.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
@@ -125,7 +126,7 @@ EMAIL: nayalew@uci.edu
             </div>
             <div class="rect2">
                 <div class="showcase2">
-                    <img src="sylvia-overlay.png" alt="a phone showing the mainpage of the sylvia+ overlay"/>
+                    <img src="sylvia-overlay1.png" alt="a phone showing the mainpage of the sylvia+ overlay"/>
                     <img src="sylvia-collections.png" alt="a phone showing the mainpage of the sylvia+ collections"/>
                     <img src="sylvia-product.png" alt="a phone showing the mainpage of the sylvia+ product"/>
                 </div>
@@ -189,12 +190,12 @@ EMAIL: nayalew@uci.edu
                 </div>
             </div>
             <div class="content s1">
-                <div class="subtitle ">
+                <div class="subtitle ins content2">
                     <h5>
                         Insights
                     </h5>
                 </div>
-                <div class="content ins insight">
+                <div class="content insight">
                     <div>
                         <span>
                             Prefers shopping online as 
@@ -245,7 +246,15 @@ EMAIL: nayalew@uci.edu
             </div>
             <div class="content">
                 <div class="collage">
-                    <img src="Ideation.png" alt="a collage of design delivarable documents"/>
+                    <img srcset="collage.png 480w,
+                                 collage-sm.png 960w,
+                                 collage-md.png 1440w,
+                                 collage-lg.png 1800w,
+                                 collage-xlg.png 2560w"
+                    src="collage-md.png"
+                    sizes="100vw"
+                    alt="a collage of design delivarable documents"
+                    >
                 </div>
             </div>
         </section>
@@ -300,31 +309,31 @@ EMAIL: nayalew@uci.edu
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="bottom">
-            <div class="container text-center">
-                <div class>
-                    <a href="index.html" target="_self">
-                        <img src="logo.png" alt="Logo">
-                    </a>
-                    <p>Email me: nayalew@uci.edu</p>
-                    <div class="line"></div>
-                    <div class="row"> 
-                        <div class="col" id="contacts">
-                            <a href="https://uci.joinhandshake.com/users/13604895" target="_blank"> 
-                                <img src="handshake.png"  alt="Handshake Icon">  
-                            </a>
-                            <a href="https://www.linkedin.com/in/nahom-ayalew-670b6491/" target="_blank"> 
-                                <img src="linkedin.png"  alt="LinkedIn Icon">  
-                            </a>
-                            <a href="https://github.com/2Noh" target="_blank"> 
-                                <img src="github.png"  alt="github Icon">  
-                            </a>
+            <footer class="bottom">
+                <div class="container text-center">
+                    <div class>
+                        <a href="index.html" target="_self">
+                            <img src="logo.png" alt="Logo">
+                        </a>
+                        <p>Email me: nayalew@uci.edu</p>
+                        <div class="line"></div>
+                        <div class="row"> 
+                            <div class="col" id="contacts">
+                                <a href="https://uci.joinhandshake.com/users/13604895" target="_blank"> 
+                                    <img src="handshake.png"  alt="Handshake Icon">  
+                                </a>
+                                <a href="https://www.linkedin.com/in/nahom-ayalew-670b6491/" target="_blank"> 
+                                    <img src="linkedin.png"  alt="LinkedIn Icon">  
+                                </a>
+                                <a href="https://github.com/2Noh" target="_blank"> 
+                                    <img src="github.png"  alt="github Icon">  
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </section>
     </div>
 <!--
 -->
