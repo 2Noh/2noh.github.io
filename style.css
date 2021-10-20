@@ -1168,6 +1168,9 @@ footer img {
         gap: 50px 0;
     }
 
+    .cube {
+        display: none;
+    }
 }
 
 /* X-Small devices (landscape phones, 360px and up)  */
