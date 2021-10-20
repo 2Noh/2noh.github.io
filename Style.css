@@ -127,6 +127,7 @@ body {
 .galaxy {
     position: static; 
     background-image: url('purpgalaxy.png'); 
+    background-image: -webkit-image-set(url("purpgalaxy.png") 1x, url("purpgalaxy@2x.png") 2x, url("purpgalaxy@3x.png") 3x);
     background-size: cover; 
     height: 856px; 
     width: 100%; 
@@ -1980,6 +1981,10 @@ footer img {
         /*! left: 16vw; */
         justify-content: unset;
         width: 50vw;
+    }
+
+    .floor {
+        bottom: 2.7VW;
     }
 
     .tags {
